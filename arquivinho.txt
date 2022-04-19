@@ -1,3 +1,149 @@
-SEI LA
-entende
-alteração
+#GIT e Github
+
+* Idéias sobre Git
+  - [X] O que é o git :
+    + Sistema de controle de versionamento distribuido, gratuito e open source
+      - [X] O que é um sistema de controle de versionamento ?
+        +
+                 Um sistema de controle de versões é um software que gerencia diferentes
+                 versões durante o desenvolvimento de um arquivo, e mantém um histórico de
+                 cada mudança realizada no arquivo que são mantidos em um diretório do
+                 servidor do sistema de controle de versões, desta forma os desenvolvedores
+                 podem acessar e criar uma cópia local para trabalharem com o desenvolvimento
+                 do mesmo.
+
+                 Se de alguma maneira o arquivo for acessado e alterado por mais de
+                 desenvolvedor ao mesmo tempo, o sistema de controle de versões tem
+                 ferramentas para mesclar as alterações feitas tentando evitar qualquer
+                 tipo de conflito, e em caso de conflito, fornece opções para contornar
+                 este mesmo conflito.
+
+                 Os sistemas de controle de versões são classificados em dois tipos:
+          - [X] Centralizado:
+            +
+                    trabalha em apenas um servidor central, suas áreas de trabalho tem que
+                    passar pelo servidor para poderem se comunicar. É uma ótima versão para
+                    pequenos grupos de desenvolvedores de uma mesma rede local.
+
+          - [X] Distribuídos:
+            +
+                    São para grandes grupos de desenvolvedores de diferentes filiais, onde
+                    cada área de trabalho tem seu próprio servidor e permite que possa
+                    comunicar-se entre si, é recomendado para evitar ramificações utilizar um
+                    servidor como centro de envio dos arquivos para centralizar o fluxo.
+
+    + O git foi projetado por Linus Torvalds em 2005 para o desenvolvimento do Linux,
+      mas foi adotado por muitos outros projetos, pelo seu alto desempenho
+      ao efetuar quase todas as operações na máquina local, o que é ainda mais
+      rápido do que os sistemas de controle de versionamento centralizados.
+      E além disso é escrito em C, o que já demonstra sua eficiência. Pois,
+      diminui considerávelmente o tempo de execução comparado à outras linguagens
+      de programação de alto nível.
+
+    + A descrição no man de git é "the stupid content tracker", ou seja, o rastreiador
+      de conteúdo estúpido. De acordo com o autor, git é um tipo de xingamento em
+      inglês britânico para alguém irritante. E que dependendo de seu humor
+      git poderia significar : "get" por erro de pronuncia; "stupid, despicable ..."
+      relacionando-se ao xingamento britânico; "global information tracker" se ele
+      estiver de bom humor e os anjos começarem a cantar, mas pode ser você feliz,
+      e sinceramente tanto faz; "goddamn idiotic truckload" que segue a linha de
+      xingamentos.
+
+      Mas a relação de "the stupid content tracker", tem relação direta ao KISS,
+      Keep It Simple Stupid, e o projeto em sí, começou bem simples, tão simples,
+      que as primeiras versões eram inacessíveis. O objetivo pricipal do git, é
+      manter as coisas bem "óbvias" e tentar não ser "esperto" demais, o que
+      pode atrapalhar no seu uso, pois abstrações podem dar significados indesejados,
+      para ações envolvendo o sistema de arquivos.
+
+  - [ ] Comandos básicos de git:
+    - [ ] Configuração:
+      - [ ] git:
+        Uma vez instalado o git, pode ser chamado desta forma, trazendo com ele
+        diversas possíbilidades de uso.
+      - [ ] config:
+        Você pode pesquisar, selecionar, substituir e retirar a seleção, de opções
+        do git através deste comando.
+      - [ ] help:
+        Uma vez que se digite "git", na linha de comando ou terminal, a lista dos
+        comandos git mais usados é mostrada, para mostrar todas as possibilidades,
+        as "--all" ou "-a" podem ser usadas, existem também alguns guias sobre
+        os comandos git que podem ser acessados por meio das flags "--guides" ou "-g",
+        mas o ideal é que para informações detalhadas se use o comando "man", que
+        está disponível em todas as distribuições Linux, por padrão.
+      - [ ] bugreport:
+        Obtem informações sobre a máquina do usuário, o git instalado nela, o estado
+        do repositório acessado, e requer um formulário que retrate a situação, de
+        um problema. No caso, como reproduzir o erro, o comportamento esperado, e
+        o que aconteceu.    
+
+    - [ ] Obtenção e Criação:
+      - [ ] init:
+        Cria um repositório git ou reinicializa um já existente, este comando cria
+        todos os arquivo e templates necessários para que se utilize o versionamento
+        git.
+      - [ ] clone:
+        Clona um repositório em uma nova pasta, e cria um rastreiador remoto para
+        cada branch neste repositório.
+
+    - [ ] Ações básicas:
+        - [ ] add:
+          Este comando atualiza o indíce, utilizando o conteúdo atual para preparar,
+          o conteúdo mapeado para o próximo commit.
+        - [ ] status:
+          Mostra as diferenças entre o indíce que há armazenado, e o último commit,
+          caminhos que não estão sendo mapeados pelo git, estão no arquivo gitignore.
+        - [ ] diff:
+          Mostra diferenças.
+        - [ ] commit:
+          Salva mudanças em um diretório, um novo commit contém os conteúdos atuais
+          que estão no indíce.
+        - [ ] notes:
+          Adiciona, remove, ou lê notas atreladas aos objetos, sem modificá-los.
+        - [ ] restore:
+          Restaura caminhos especificos da árvore de trabalho, se um caminho não
+          mapeado não estiver na fonte de restauração, será removido.
+        - [ ] reset:
+
+        - [ ] rm:
+        - [ ] mv:
+
+    - [ ] Branching e Merging:
+      - [ ] branch:
+      - [ ] checkout:
+      - [ ] switch:
+      - [ ] merge:
+      - [ ] mergetool:
+      - [ ] log:
+      - [ ] stash:
+      - [ ] tag:
+      - [ ] worktree:
+
+    - [ ] Compartilhamento e Atualização:
+      - [ ] fetch:
+      - [ ] pull:
+      - [ ] push:
+      - [ ] remote:
+      - [ ] submodule:
+
+    - [ ] Inspeção e Comparação:
+      - [ ] show:
+      - [ ] log:
+      - [ ] diff:
+      - [ ] difftool:
+      - [ ] range-diff:
+      - [ ] shortlog:
+      - [ ] describe:
+
+    - [ ] Empacotamento:
+      - [ ] apply:
+      - [ ] cherry-pick:
+      - [ ] diff:
+      - [ ] rebase:
+      - [ ] revert:
+
+    - [ ] Depuração:
+      - [ ] bisect:
+      - [ ] blame:
+      - [ ] grep:
+
