@@ -1,4 +1,4 @@
-#GIT e Github
+#GIT e Github#
 
 * Idéias sobre Git
   - [X] O que é o git :
