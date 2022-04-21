@@ -57,67 +57,90 @@
       para ações envolvendo o sistema de arquivos.
 
   - [ ] Comandos básicos de git:
-    - [ ] Configuração:
-      - [ ] git:
+    - [X] Configuração:
+      - [X] git:
         Uma vez instalado o git, pode ser chamado desta forma, trazendo com ele
         diversas possíbilidades de uso.
-      - [ ] config:
+      - [X] config:
         Você pode pesquisar, selecionar, substituir e retirar a seleção, de opções
         do git através deste comando.
-      - [ ] help:
+      - [X] help:
         Uma vez que se digite "git", na linha de comando ou terminal, a lista dos
         comandos git mais usados é mostrada, para mostrar todas as possibilidades,
         as "--all" ou "-a" podem ser usadas, existem também alguns guias sobre
         os comandos git que podem ser acessados por meio das flags "--guides" ou "-g",
         mas o ideal é que para informações detalhadas se use o comando "man", que
         está disponível em todas as distribuições Linux, por padrão.
-      - [ ] bugreport:
+      - [X] bugreport:
         Obtem informações sobre a máquina do usuário, o git instalado nela, o estado
         do repositório acessado, e requer um formulário que retrate a situação, de
         um problema. No caso, como reproduzir o erro, o comportamento esperado, e
-        o que aconteceu.    
+        o que aconteceu.
 
-    - [ ] Obtenção e Criação:
-      - [ ] init:
+    - [X] Obtenção e Criação:
+      - [X] init:
         Cria um repositório git ou reinicializa um já existente, este comando cria
         todos os arquivo e templates necessários para que se utilize o versionamento
         git.
-      - [ ] clone:
+      - [X] clone:
         Clona um repositório em uma nova pasta, e cria um rastreiador remoto para
         cada branch neste repositório.
 
-    - [ ] Ações básicas:
-        - [ ] add:
-          Este comando atualiza o indíce, utilizando o conteúdo atual para preparar,
-          o conteúdo mapeado para o próximo commit.
-        - [ ] status:
-          Mostra as diferenças entre o indíce que há armazenado, e o último commit,
-          caminhos que não estão sendo mapeados pelo git, estão no arquivo gitignore.
-        - [ ] diff:
-          Mostra diferenças.
-        - [ ] commit:
-          Salva mudanças em um diretório, um novo commit contém os conteúdos atuais
-          que estão no indíce.
-        - [ ] notes:
-          Adiciona, remove, ou lê notas atreladas aos objetos, sem modificá-los.
-        - [ ] restore:
-          Restaura caminhos especificos da árvore de trabalho, se um caminho não
-          mapeado não estiver na fonte de restauração, será removido.
-        - [ ] reset:
+    - [X] Ações básicas:
+      - [X] add:
+        Este comando atualiza o indíce, utilizando o conteúdo atual para preparar,
+        o conteúdo mapeado para o próximo commit.
+      - [X] status:
+        Mostra as diferenças entre o indíce que há armazenado, e o último commit,
+        caminhos que não estão sendo mapeados pelo git, estão no arquivo gitignore.
+      - [X] diff:
+        Mostra diferenças.
+      - [X] commit:
+        Salva mudanças em um diretório, um novo commit contém os conteúdos atuais
+        que estão no indíce.
+      - [X] notes:
+        Adiciona, remove, ou lê notas atreladas aos objetos, sem modificá-los.
+      - [X] restore:
+        Restaura caminhos especificos da árvore de trabalho, se um caminho não
+        mapeado não estiver na fonte de restauração, será removido.
+      - [X] reset:
+        Remove alterações de commits do ramo atual, e pode ser especificado
+        quantos serão removidos, ou seja, o quão longe eu vou resetar meu
+        estado atual, as coisas que foram removidas, com essa ação vão para
+        o estado "not staged"
+      - [X] rm:
+        Remove arquivos mapeados do indice do git.
+      - [X] mv:
+        Renomeia ou move arquivos, e coloca eles automáticamente em stagged, então
+        só comitar já tráz a nova organização ao git, sem necessidade de git add
 
-        - [ ] rm:
-        - [ ] mv:
+    - [X] Branching e Merging:
+      - [X] branch:
+        O comando branch, serve para gerenciar a criação, exclusão e os nomes dos ramos.
+      - [X] checkout:
+        Realiza a troca de contexto em branches, arquivos e commits.
+      - [X] switch:
+        Troca de branch, assim como checkout.
+      - [X] merge:
+        Junta conjuntos de commits, que podem ser de branches diferentes e os coloca
+        no branch atual. O comando git pull, utiliza o merge para mesclar as mudanças
+        que são necessárias para que o git local fique atualizado.
+      - [X] mergetool:
+        Contém diversas ferramentas para resolver conflitos de merge.
+      - [X] log:
+        Mostra o histórico dos commits e suas informações
+      - [X] stash:
+        Ele copia o que foi feito após o commit para uma região separada, e restaura
+        o commit imediatamente anterior.
+      - [X] tag:
+        Marca pontos específicos no repositório, como importantes. Normalmente
+        usado para marcar versões diferentes.
+      - [X] worktree:
+        O comando worktree, permite a criação de outras árvores de trabalho, e assim
+        possibilitando trabalhar com diversas branches simultaneamente. Criando
+        novos repositórios para o projeto e que cada um deles pode ter diversas branches,
+        e assim como a árvore principal se trabalha um branch por vez.
 
-    - [ ] Branching e Merging:
-      - [ ] branch:
-      - [ ] checkout:
-      - [ ] switch:
-      - [ ] merge:
-      - [ ] mergetool:
-      - [ ] log:
-      - [ ] stash:
-      - [ ] tag:
-      - [ ] worktree:
 
     - [ ] Compartilhamento e Atualização:
       - [ ] fetch:
