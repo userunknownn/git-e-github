@@ -193,8 +193,13 @@
 	do histórico do projeto, ele descobre como inverter as alterações introduzidas pelo commit 
 	e anexa um commit novo com o conteúdo resultante.
 
-    - [ ] Depuração:
-      - [ ] bisect:
-      - [ ] blame:
-      - [ ] grep:
+    - [X] Depuração:
+      - [X] bisect:
+        Uma ferramenta do git, para descobrir qual commit, introduziu uma falha.
+      - [X] blame:
+        Mostra quem foram as pessoas que modificaram que partes de um arquivo,
+        baseando-se no estado do último commit.
+      - [X] grep:
+        Mostra resultados de busca, no projeto partindo de expressões regulares.
+        Se o argumento para este commando for vazio, tudo é selecionado.
 
