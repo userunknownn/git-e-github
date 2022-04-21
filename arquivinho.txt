@@ -56,7 +56,7 @@
       pode atrapalhar no seu uso, pois abstrações podem dar significados indesejados,
       para ações envolvendo o sistema de arquivos.
 
-  - [ ] Comandos básicos de git:
+  - [-] Comandos básicos de git:
     - [X] Configuração:
       - [X] git:
         Uma vez instalado o git, pode ser chamado desta forma, trazendo com ele
@@ -149,19 +149,22 @@
       - [ ] remote:
       - [ ] submodule:
 
-    - [ ] Inspeção e Comparação:
+    - [-] Inspeção e Comparação:
       - [ ] show:
-      - [ ] log:
-      - [ ] diff:
+      - [X] log:
+        Mostra o histórico dos commits e suas informações
+      - [X] diff:
+        Mostra diferenças.
       - [ ] difftool:
       - [ ] range-diff:
       - [ ] shortlog:
       - [ ] describe:
 
-    - [ ] Empacotamento:
+    - [-] Empacotamento:
       - [ ] apply:
       - [ ] cherry-pick:
-      - [ ] diff:
+      - [X] diff:
+        Mostra diferenças.
       - [ ] rebase:
       - [ ] revert:
 
