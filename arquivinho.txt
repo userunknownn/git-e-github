@@ -149,16 +149,28 @@
       - [ ] remote:
       - [ ] submodule:
 
-    - [-] Inspeção e Comparação:
-      - [ ] show:
+    - [X] Inspeção e Comparação:
+      - [X] show:
+        Mostra detalhes, sobre um ou mais objetos, no caso de árvores, mostra os nomes;
+        No caso de tags, mostra a mensagem da tag e qual objeto esta referencia;
+        No caso de commits, mostra a mensagem do log e a diferença;
       - [X] log:
         Mostra o histórico dos commits e suas informações
       - [X] diff:
         Mostra diferenças.
-      - [ ] difftool:
-      - [ ] range-diff:
-      - [ ] shortlog:
-      - [ ] describe:
+      - [X] difftool:
+        É um comando que transfere a saída do comando diff, para um outro programa, para
+        que seja mostrada, de acordo com a manipulação do programa.
+      - [X] range-diff:
+        Mostra diferenças sobre um conjunto de commits, versões empacotadas, ou
+        de branches, que tem um ponto inicial em comum.
+      - [X] shortlog:
+        Mostra os autores dos commits, quais commits foram de cada autor.
+      - [X] describe:
+        Retorna um nome legível baseado numa referencia disponível. Encontra a tag
+        mais recente, partindo de um commit. Mostra o número de commits sobre a
+        referência especificada, e quais outros commits estão atrelados à ela. E no
+        caso de uma tag referenciar um commit, ela retorna somente a tag é mostrada.
 
     - [-] Empacotamento:
       - [ ] apply:
