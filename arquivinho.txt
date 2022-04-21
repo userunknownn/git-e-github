@@ -172,13 +172,26 @@
         referência especificada, e quais outros commits estão atrelados à ela. E no
         caso de uma tag referenciar um commit, ela retorna somente a tag é mostrada.
 
-    - [-] Empacotamento:
-      - [ ] apply:
-      - [ ] cherry-pick:
+    - [X] Empacotamento:
+      - [X] apply:
+	O comando git apply aplica as mudanças que estão dentro dos arquivos .patch 
+	aos arquivos correspondentes dentro da pasta de trabalho.
+	Use git-am[1] para criar commits de patches gerados por git-format-patch[1] 	
+	e/ou recebidos por e-mail.
+      - [X] cherry-pick:
+	 é um poderoso comando que permite que commits de Git arbitrários sejam coletados como referência
+	 e anexados ao HEAD de trabalho atual. "Cherry picking" é o ato de selecionar um commit da ramificação
+	 e fazer a aplicação a outra.
       - [X] diff:
         Mostra diferenças.
-      - [ ] rebase:
+      - [X] rebase:
+	Reaplica commits em cima de outra dica base, ou seja, executra o processo de mover
+	ou combinar uma sequência de commits para um novo commit base.	
       - [ ] revert:
+	O comando git revert pode ser considerado um comando do tipo "desfazer"; 
+	no entanto, ele não é uma operação tradicional de desfazer. Em vez de remover o commit 
+	do histórico do projeto, ele descobre como inverter as alterações introduzidas pelo commit 
+	e anexa um commit novo com o conteúdo resultante.
 
     - [ ] Depuração:
       - [ ] bisect:
