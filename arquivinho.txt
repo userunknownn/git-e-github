@@ -142,9 +142,11 @@
         e assim como a árvore principal se trabalha um branch por vez.
 
 
-    - [ ] Compartilhamento e Atualização:
-      - [ ] fetch:
+    - [X] Compartilhamento e Atualização:
+      - [X] fetch:
+	O comando fetch, serve para baixar conteúdos de um repositório remoto. O git fetch é usado em 	conjunto com git remote , git branch , git checkout e git reset para atualizar um repositório 	local ao estado de um remoto.
       - [ ] pull:
+
       - [ ] push:
       - [ ] remote:
       - [ ] submodule:
