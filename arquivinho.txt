@@ -143,13 +143,18 @@
 
 
     - [X] Compartilhamento e Atualização:
-      - [X] fetch:
-	O comando fetch, serve para baixar conteúdos de um repositório remoto. O git fetch é usado em 	conjunto com git remote , git branch , git checkout e git reset para atualizar um repositório 	local ao estado de um remoto.
-      - [ ] pull:
-
-      - [ ] push:
-      - [ ] remote:
-      - [ ] submodule:
+      - [X] fetch: O comando fetch, serve para baixar conteúdos de um repositório remoto;
+        O git fetch é usado em conjunto com git remote, git branch, git checkout e git reset para 
+        atualizar um repositório local ao estado de um remoto.
+      - [X] pull: O comando git pull é usado para buscar e baixar conteúdo de repositórios remotos
+        e fazer a atualização imediata ao repositório local para que os conteúdos sejam iguais.
+      - [X] push: O comando git push é usado para enviar o conteúdo do repositório local para um 
+        repositório remoto. O comando push transfere commits do repositório local a um repositório remoto.
+        É o oposto do comando git fetch, que importa commits para branches locais, enquanto o comando push
+        exporta commits para branches remotos.
+      - [X] remote: O comando git remote permite criar, ver e excluir conexões com outros repositórios. 
+      - [X] submodule: O Submodule permite que você mantenha o repositório Git como um subdiretório de 
+        outro repositório Git, o que permite um clone de outro repositório dentro do seu, além de permitir commits totalmente separados.
 
     - [X] Inspeção e Comparação:
       - [X] show:
